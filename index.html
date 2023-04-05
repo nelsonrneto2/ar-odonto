@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.R. Odontologia Especializada</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <header class="">
+    <a href="#" class="logo"><img src="./assets/img/logo.svg" alt="logo" srcset=""></a>
+    <div class="toggleMenu" onclick="toggleMenu()">
+      <nav class="navigation row">
+        <ul class="row">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#service">Serviços</a></li>
+          <li><a href="#testimonial">Depoimentos</a></li>
+          <li>
+            <a href="#contact" class="page-btn active toggleContact" onclick="toggleContact()">Agendar Consulta</a>
+            <!--<div class="contactMenu row">
+              <div class="contactMenu-content row flex">
+                <div>
+                  <h4>Marque sua visita na</h4>
+                  <h4>A.R. Odonto</h4>
+                  <form action="https://formsubmit.co/contatosonneto@gmail.com" method="POST">
+                    <div class="form row">
+                      <div>
+                        <label for="name">Nome</label>
+                        <input type="text" name="Nome" id="name" placeholder="Nome" >
+                      </div>
+                      <div>
+                        <label for="tel">Número de Telefone</label>
+                        <input type="text" name="Telefone" id="tel" placeholder="Número de Telefone">
+                      </div>
+                      <div>
+                        <label for="data">Selcione uma Data</label>
+                        <input type="date" name="Data" id="data">
+                      </div>
+                      <div>
+                        <label for="hora">Selecione o Horário</label>
+                        <select name="Hora" id="hora">
+                          <option value="09hr">09:00</option>
+                          <option value="10hr">10:00</option>
+                          <option value="11hr">11:00</option>
+                          <option value="14hr">14:00</option>
+                          <option value="15hr">15:00</option>
+                          <option value="16hr">16:00</option>
+                          <option value="17hr">17:00</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label for="desc">Selecione o Serviço</label>
+                        <select name="Descrição" id="desc">
+                          <option value="0">Descrição</option>
+                          <option value="1">Descrição</option>
+                          <option value="2">Descrição</option>
+                          <option value="3">Descrição</option>
+                          <option value="4">Descrição</option>
+                          <option value="5">Descrição</option>
+                        </select>
+                      </div>
+                      <input type="hidden" name="_next" value="http://127.0.0.1:5500//index.html">
+                      <input type="hidden" name="_captcha" value="false">
+                      <button type="submit" class="page-btn">Solicitar Consulta</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>-->
+          </li> 
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- end NAVIGATION -->
+
+  <!-- HERO -->
+  <section class="hero row flex container">
+    <div class="hero-content flex">
+      <h1>
+        Estamos prontos para <br>
+        ajudar a cuidar <br>
+        do seu Sorriso
+      </h1>
+      <p>A.R. Odontologia Especializada</p>
+      <a href="#" class="page-btn ">Agendar Atendimento!</a>
+    </div>
+    <div class="hero-img">
+      <img src="./assets/img/anne-rafa.png" alt="" srcset="">
+    </div>
+  </section>
+  <!-- end HERO -->
+  
+  <!--Sobre-->
+  <section class="about row flex container" id="about">
+    <div class="about-img row">
+      <img src="./assets/img/img-1.jpg" alt="dentista">
+      <img src="./assets/img/img-2.jpg" alt="dentista">
+      <img src="./assets/img/img-3.jpg" alt="dentista">
+    </div>
+    <div class="about-content">
+      <h5>Sobre Nós</h5>
+      <h2>Nós temos mais de 3 anos de experiência profissional</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac dolor et lectus eleifend volutpat et nec nibh.
+        Donec ex dolor, volutpat vitae ante mattis, varius rutrum diam.</p>
+      <a href="#" class="page-btn">Marcar Consulta</a>
+    </div>
+  </section>
+  <!--end Sobre-->
+
+  <!--Serviços-->
+  <section class="service container" id="service">
+    <div class="service-content row flex">
+      <div class="service-card">
+        <h2>Oferecemos atendimento moderno e eficaz</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio bibendum habitant morbi nunc sed euismod congue condimentum. Ullamcorper nunc consequat erat sed tellus massa in et.</p>
+      </div>
+      <div class="service-cards column">
+        <div class="s-card">
+          <img src="./assets/icons/icon-1.svg" alt="ícone">
+          <h3>Facetas em Resina</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="card-btn row">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.3651 12.56L14.3851 17.56C14.2251 17.72 14.0251 17.8 13.8251 17.8C13.6251 17.8 13.4251 17.72 13.2651 17.56C12.9451 17.24 12.9451 16.74 13.2651 16.42L16.8851 12.78H5.2051C4.7651 12.78 4.4051 12.42 4.4051 11.98C4.4051 11.54 4.7651 11.18 5.2051 11.18H16.8851L13.2651 7.54004C12.9451 7.22004 12.9451 6.72003 13.2651 6.40003C13.5851 6.08003 14.0851 6.08003 14.4051 6.40003L19.3851 11.4C19.6851 11.74 19.6851 12.26 19.3651 12.56Z"
+                fill="#548853" />
+            </svg>
+          </a>
+        </div>
+        <div class="s-card">
+          <img src="./assets/icons/icon-2.svg" alt="ícone">
+          <h3>Canal</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="card-btn row">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.3651 12.56L14.3851 17.56C14.2251 17.72 14.0251 17.8 13.8251 17.8C13.6251 17.8 13.4251 17.72 13.2651 17.56C12.9451 17.24 12.9451 16.74 13.2651 16.42L16.8851 12.78H5.2051C4.7651 12.78 4.4051 12.42 4.4051 11.98C4.4051 11.54 4.7651 11.18 5.2051 11.18H16.8851L13.2651 7.54004C12.9451 7.22004 12.9451 6.72003 13.2651 6.40003C13.5851 6.08003 14.0851 6.08003 14.4051 6.40003L19.3851 11.4C19.6851 11.74 19.6851 12.26 19.3651 12.56Z"
+                fill="#548853" />
+            </svg>
+          </a>
+        </div>
+        
+          <div class="s-card">
+            <img src="./assets/icons/icon-3.svg" alt="ícone">
+            <h3>Clareamento</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="card-btn row">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.3651 12.56L14.3851 17.56C14.2251 17.72 14.0251 17.8 13.8251 17.8C13.6251 17.8 13.4251 17.72 13.2651 17.56C12.9451 17.24 12.9451 16.74 13.2651 16.42L16.8851 12.78H5.2051C4.7651 12.78 4.4051 12.42 4.4051 11.98C4.4051 11.54 4.7651 11.18 5.2051 11.18H16.8851L13.2651 7.54004C12.9451 7.22004 12.9451 6.72003 13.2651 6.40003C13.5851 6.08003 14.0851 6.08003 14.4051 6.40003L19.3851 11.4C19.6851 11.74 19.6851 12.26 19.3651 12.56Z"
+                  fill="#548853" />
+              </svg>
+            </a>
+          </div>
+          <div class="s-card">
+            <img src="./assets/icons/icon-4.svg" alt="ícone">
+            <h3>Diagnósticos</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="card-btn row">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.3651 12.56L14.3851 17.56C14.2251 17.72 14.0251 17.8 13.8251 17.8C13.6251 17.8 13.4251 17.72 13.2651 17.56C12.9451 17.24 12.9451 16.74 13.2651 16.42L16.8851 12.78H5.2051C4.7651 12.78 4.4051 12.42 4.4051 11.98C4.4051 11.54 4.7651 11.18 5.2051 11.18H16.8851L13.2651 7.54004C12.9451 7.22004 12.9451 6.72003 13.2651 6.40003C13.5851 6.08003 14.0851 6.08003 14.4051 6.40003L19.3851 11.4C19.6851 11.74 19.6851 12.26 19.3651 12.56Z"
+                  fill="#548853" />
+              </svg>
+            </a>
+          </div>
+          <div class="s-card">
+            <img src="./assets/icons/icon-5.svg" alt="ícone">
+            <h3>Check Up</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="card-btn row">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.3651 12.56L14.3851 17.56C14.2251 17.72 14.0251 17.8 13.8251 17.8C13.6251 17.8 13.4251 17.72 13.2651 17.56C12.9451 17.24 12.9451 16.74 13.2651 16.42L16.8851 12.78H5.2051C4.7651 12.78 4.4051 12.42 4.4051 11.98C4.4051 11.54 4.7651 11.18 5.2051 11.18H16.8851L13.2651 7.54004C12.9451 7.22004 12.9451 6.72003 13.2651 6.40003C13.5851 6.08003 14.0851 6.08003 14.4051 6.40003L19.3851 11.4C19.6851 11.74 19.6851 12.26 19.3651 12.56Z"
+                  fill="#548853" />
+              </svg>
+            </a>
+          </div>
+        
+
+      </div>
+  </section>
+  <!-- fim Serviços-->
+
+  <!-- Avaliações-->
+  <section class="testimonial" id="testimonial">
+    <div class="container">
+      <h2>O que os pacientes dizem sobre nós?</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide row">
+            <div class="slide-profile">
+              <img src="./assets/img/profile1.png" alt="Usuário">
+            </div>
+            <div>
+              <h3>Gread Cop</h3>
+              <div class="row">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio bibendum habitant morbi nunc sed euismod
+                congue condimentum. </p>
+            </div>
+          </div>
+          <div class="swiper-slide row">
+            <div class="slide-profile">
+              <img src="./assets/img/profile1.png" alt="Usuário">
+            </div>
+            <div>
+              <h3>Gread Cop</h3>
+              <div class="row">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio bibendum habitant morbi nunc sed euismod
+                congue condimentum. </p>
+            </div>
+          </div>
+          <div class="swiper-slide row">
+            <div class="slide-profile">
+              <img src="./assets/img/profile1.png" alt="Usuário">
+            </div>
+            <div>
+              <h3>Gread Cop</h3>
+              <div class="row">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio bibendum habitant morbi nunc sed euismod
+                congue condimentum. </p>
+            </div>
+          </div>
+          <div class="swiper-slide row">
+            <div class="slide-profile">
+              <img src="./assets/img/profile1.png" alt="Usuário">
+            </div>
+            <div>
+              <h3>Gread Cop</h3>
+              <div class="row">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+                <img src="./assets/icons/star.svg" alt="">
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio bibendum habitant morbi nunc sed euismod
+                congue condimentum. </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- fim Avaliações-->
+
+  <!--Contato-->
+  <section class="contact-body">
+    <div class="contact row container">
+      <div class="contact-content">
+        <h2>Estamos prontos para atender você da melhor forma!</h2>
+        <div class="contact-btns row">
+          <a href="tel:+5599992273367">Ligar 99 992273367</a>
+          <span>ou</span>
+          <a href="#">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--fim Contato-->
+
+  <!--Footer-->
+  <footer>
+    <div class="footer row container">
+      <div>
+        <a href="#" class="logo"><img src="./assets/img/logo.png" alt="logo"></a>
+        <p>Serviço de consulta com dentistas especializados</p>
+        <div class="media-links">
+          <a href="#"><img src="./assets/img/face.svg" alt="facebook"></a>
+          <a href="#"><img src="./assets/img/twitter.svg" alt="Twitter"></a>
+          <a href="#"><img src="./assets/img/insta.svg" alt="Instagram"></a>
+        </div>
+      </div>
+        <div>
+          <h5>Entre em contato</h5>
+          <ul>
+            <li>contato@arodontologia.com</li>
+            <li>99 9 9227-3367</li>
+            <li>av Joao 23, n. 12</li>
+          </ul>
+        </div>
+      </div>
+      <p class="copy-right">Desenvolvido por <a href="https://portfolionelson.netlify.app/" target="_blank">Nelson R. Neto</a> &copy; 2023. Todos os direitos Reservados</p>
+
+  </footer>
+  <!--Fim Footer-->
+
+
+  <!--SCRIPTS-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</body>
+
+</html>
